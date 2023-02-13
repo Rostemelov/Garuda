@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="https://cloud.boltiot.com/static/js/boltCommands.js"></script>
+    <script>
+        setKey('{{ApiKey}}','{{Name}}');
+    </script>
+    <script>serialBegin(9600);</script>
+        <style>
+            *{margin: 0;
+            padding: 0;}
+            .secure{color:red;}
+            .logo{  padding-top: 10px;
+                    margin: auto;
+                    width: 50%;
+            }
+            .content{
+              width: 75%;
+              margin: auto;
+              margin-top: 7%;
+              padding-top: 50px;
+              
+            }
+            .con{
+                margin: 10px;
+            }
+
+        </style>
+    <title>GARUDA </title>
+    <link rel="shortcut icon" href="favicon.jpeg" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        
+</head>
+<body class="vh-100">
+    <nav class="navbar navbar-light bg-light">
+        <div class="container-fluid">
+            <img src="GARUDAlogo.png" alt="" class="logo">
+        </div>
+      </nav>
+    
+    
+    <div class="container vh-75">
+        
+           <div class="content ">
+            
+            <div class="card text-center">
+                <div class="card-header fs-2">
+                    Your home is: <span class="secure" id="ins">insecure</span ><span id="sec" style="display: none; color: green;">Secure</span>
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title con">Are you sure your home is secure?</h5>
+
+                    <!-- <p class="fs-1"> </p> -->
+                    
+                        <button class="btn  btn-success con w-25" onclick="serialWrite('Y');">Yes</button>
+                    
+        
+                    <p class="card-text con">ignore if not. Garuda will take care.</p>
+                </div>
+        </div>
+        </div>
+        
+    </div>
+   
+   
+    
+        
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+
+</html>
+
+
+
+
