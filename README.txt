@@ -7,4 +7,4 @@ The beta version uses Bolt IoT wifi module and cloud. It is limited to just the 
 
 The next prototype version uses a standalone server model, and uses a web interface and ESP32 wifi modules instead of Bolt IoT Wifi Module.
 
--The Beta version is in a separate branch titled 'crude_beta', while the prototype is in the main branch.
+-The Beta version is in a separate branch titled 'Beta', while the prototype is in the main branch.
