@@ -1,10 +1,9 @@
-Garuda is the name of Lord Vishnu's Vehicle, an eagle. But Garuda, is not just an ordinary eagle. 
-Garuda is also a fierce and swift protector who is very vigilant. That is the inspiration for the name.
+We have upgraded from our beta version where we had a very crude face detection algorithm and 
+were just able to confirm that we were able establish a communication between devices.
 
-The project is a home security system. It aims at all round security of every individual of the family.
-
-The beta version uses Bolt IoT wifi module and cloud. It is limited to just the front door camera lock system.
-
-The next prototype version uses a standalone server model, and uses a web interface and ESP32 wifi modules instead of Bolt IoT Wifi Module.
-
--The Beta version is in a separate branch titled 'Beta', while the prototype is in the main branch.
+In this branch, we have upgraded our face recognition at the camera door-lock system and provided a web based interface.
+Added features include:
+	- Creating a log of unrecognized faces,
+	-	Switched to SMS using Twilio for notification
+	-	Have a remote camera (not directly connected to the main system)
+	- Used Sqlite and Flask for the backend.
