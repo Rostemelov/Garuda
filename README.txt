@@ -6,4 +6,4 @@ Added features include:
 	- Creating a log of unrecognized faces,
 	-	Switched to SMS using Twilio for notification
 	-	Have a remote camera (not directly connected to the main system)
-	- Used Sqlite and Flask for the backend.
+	-       Used Sqlite and Flask for the backend.
